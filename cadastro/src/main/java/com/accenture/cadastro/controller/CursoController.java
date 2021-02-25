@@ -17,7 +17,7 @@ import com.accenture.cadastro.model.Curso;
 import com.accenture.cadastro.repository.CursoRepository ;
 
 @RestController
-@RequestMapping("/curso")
+@RequestMapping("/cursos")
 public class CursoController {
 	@Autowired
 	private CursoRepository  cursoRepository;
