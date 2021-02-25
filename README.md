@@ -37,7 +37,7 @@ Projeto desenvolvido durante o **Treinamento Java e Node** oferecida pela [Gama 
 
 ---
 
-## :page_with_curl: Documentação Completa
+## 📃 Documentação Completa
 
 - <a href="#">Back-End</a>
 
@@ -61,12 +61,13 @@ Projeto desenvolvido durante o **Treinamento Java e Node** oferecida pela [Gama 
     - Pesquisa e Leitura
     - Ediçao
     - Exclusão
+    
 ---
 
 ## 🚀 Como executar o projeto
 
 Este projeto está em uma unica parte:
-1. Backend (cadastro) 
+1. Backend ([cadastro](https://github.com/EdileneLopes/accenture-java/tree/master/cadastro)) 
 
 💡 O Backend deve estar sendo executado para funcionar.
 
@@ -79,8 +80,7 @@ E para testar e consumir os Endpoints use [Postman](https://www.postman.com/)
 
 #### 🎲 Rodando o Backend (servidor)
 
-```bash
-
+```
 # Clone este repositório
 $ git clone https://github.com/EdileneLopes/accenture-java.git
 
@@ -88,26 +88,49 @@ $ git clone https://github.com/EdileneLopes/accenture-java.git
 $ cd accenture-java.git
 
 # Importe o projeto no Eclipse (Importar como um Exisng Maven Project)
-$ 
+```
 
+<img src="https://i.imgur.com/tU11LLf.png" width="500px">
+
+```
 # Selecione a pasta do projeto e selecione o pom.xml e clique em FINISH
-$ 
+```
 
+<img src="https://i.imgur.com/P8UFR0T.png" width="500px">
+
+```
 # A estrutura do nosso projeto importado para o eclipse fica de acordo com a imagem:
-$ 
+```
 
+<img src="https://i.imgur.com/iEwwTEM.png" width="500px">
+
+```
+# Um passo antes da execução
+$ Abra o arquivo application.properties
+$ Troque a senha existente pela sua senha configurada no MySQL
+```
+
+<img src="https://i.imgur.com/te9Arr2.png" width="500px">
+
+```
 # Execute
 $ Basta selecionar CadastroApplication.java, ir com o botão direito do Mouse na seguinte opção
 $ Run As > Java Application
+```
 
-# O servidor inciará na porta:8080 - acesse http://localhost:8080 
-[Acesse a Documentação com todos Endpoints](http://localhost:8080/swagger-ui.html#/curso-controller)
-
-
-# Para o consumo de API
-Utilize o **[Postman](https://www.postman.com/)**
+<img src="https://i.imgur.com/aoSV9Ho.png" width="500px">
 
 ```
+# O servidor inciará na porta:8080 - Acesse: http://localhost:8080
+```
+
+[Acesse a Documentação com Swagger UI](http://localhost:8080/swagger-ui.html#/) ou http://localhost:8080/swagger-ui.html#/
+
+```
+# Para o consumo de API
+```
+Utilize o **[Postman](https://www.postman.com/)**
+
 
 ---
 
@@ -144,9 +167,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/EdileneLopes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/60043558?v=4" width="150px;" alt=""/><br /><sub><b>Edilene Lopes</b></sub></a><br /><a href="https://www.linkedin.com/in/edilene-lopes/" title="Gamados por Java"></a></td>
-    <td align="center"><a href="https://github.com/elsonss1988"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/45674699?v=4" width="150px;" alt=""/><br /><sub><b>Elson Santos</b></sub></a><br /><a href="" title="Gamados por Java"></a></td>
-    <td align="center"><a href="https://github.com/botelholarissa"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67758775?v=4" width="150px;" alt=""/><br /><sub><b>Larissa Botelho</b></sub></a><br /><a href="https://www.linkedin.com/in/botelholarissa/" title="Gamados por Java"></a></td>
+    <td align="center"><a href="https://github.com/EdileneLopes"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/60043558?v=4" width="150px;" alt=""/><br /><sub><b>Edilene Lopes</b></sub></a><br /><a href="https://www.linkedin.com/in/edilene-lopes/" title="Gamados por Java">:family: :books:</a></td>
+    <td align="center"><a href="https://github.com/elsonss1988"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/45674699?v=4" width="150px;" alt=""/><br /><sub><b>Elson Santos</b></sub></a><br /><a href="https://www.linkedin.com/in/eng-elson/" title="Gamados por Java">:coffee:  :musical_note:</a></td>
+    <td align="center"><a href="https://github.com/botelholarissa"><img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/67758775?v=4" width="150px;" alt=""/><br /><sub><b>Larissa Botelho</b></sub></a><br /><a href="https://www.linkedin.com/in/botelholarissa/" title="Gamados por Java">:seedling: :computer:</a></td>
     <td align="center"><a href="https://github.com/Rubenscode"><img style="border-radius: 50%;" src="https://avatars2.githubusercontent.com/u/40808539?v=4" width="150px;" alt=""/><br /><sub><b>Rubens Almeida</b></sub></a><br /><a href="https://www.linkedin.com/in/rubens-almeida-andrade/" title="Gamados por Java">👨‍🚀 :alien:</a></td>
   </tr>
 </table>
