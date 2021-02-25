@@ -29,7 +29,7 @@ public class SpringFoxConfig {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
 				.title("Documentação (CRUD)")
-				.description("Sistema de Gerenciamento de Alunos")
+				.description("Sistema de Gerenciamento de Alunos - Que permite o Cadastro, Inclusão, Consulta e Exclusão de Alunos.")
 				.version("1.0")
 				.contact(contact())
 				.build();
