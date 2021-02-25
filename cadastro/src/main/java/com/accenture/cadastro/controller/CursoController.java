@@ -13,23 +13,22 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 
-import com.accenture.cadastro.model.CursoModel;
+import com.accenture.cadastro.model.Curso;
 import com.accenture.cadastro.repository.CursoRepository ;
 
 @RestController
 @RequestMapping("/curso")
-
 public class CursoController {
 	@Autowired
 	private CursoRepository  cursoRepository;
  
 	@GetMapping
-	public  List<CursoModel> listar() {
+	public  List<Curso> listar() {
 	return cursoRepository.findAll();
 	}
 	
 	@PostMapping
-	public ResponseEntity<CursoModel> post(@RequestBody CursoModel curso){
+	public ResponseEntity<Curso> post(@RequestBody Curso curso){
 		return ResponseEntity.status(HttpStatus.CREATED).body(cursoRepository.save(curso));
 	}
 }
