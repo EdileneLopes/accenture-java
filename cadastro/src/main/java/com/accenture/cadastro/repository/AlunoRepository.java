@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.accenture.cadastro.model.Aluno;
 
 @Repository
-public interface AlunoRepository extends JpaRepository<Aluno, Long> {
+public interface AlunoRepository extends JpaRepository<Aluno, Long>{
 	public List<Aluno> findAllByNomeContainingIgnoreCase(String nome);
 }
 
