@@ -8,5 +8,5 @@ import com.accenture.cadastro.model.Disciplina;
 
 @Repository
 public interface DisciplinaRepository extends JpaRepository<Disciplina, Long> {
-	public List<Disciplina> findAllByNomeContainingIgnoreCase(String nomeDisciplina);
+	public List<Disciplina> findAllByNomeContainingIgnoreCase(String nome);
 }

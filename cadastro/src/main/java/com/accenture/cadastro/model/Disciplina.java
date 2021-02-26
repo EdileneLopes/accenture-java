@@ -12,18 +12,16 @@ import lombok.Setter;
 @Setter
 @Entity
 @Table(name = "tb_disciplina")
-
-
 public class Disciplina {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	public long id;
-	public String nomeDisciplina;
-	public double notaProva1;
-	public double notaProva2;
-	public double notaTrabalho;
-	public double notaApresentacao;
+	Long id;
+	String nome;
+	double notaProva1;
+	double notaProva2;
+	double notaTrabalho;
+	double notaApresentacao;
 	
 	public Disciplina() {
 		
