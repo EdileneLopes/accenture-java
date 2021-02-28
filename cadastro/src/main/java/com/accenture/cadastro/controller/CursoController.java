@@ -35,7 +35,7 @@ public class CursoController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(curso));
 	}
 
-	@PutMapping("/{id}")
+	@PutMapping
 	public ResponseEntity<Curso> put(@RequestBody Curso curso) {
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(curso));
 	}

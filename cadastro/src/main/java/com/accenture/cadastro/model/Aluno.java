@@ -1,16 +1,11 @@
 package com.accenture.cadastro.model;
 
-import java.util.List;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import lombok.Getter;
@@ -26,7 +21,6 @@ public class Aluno {
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
 	long id;
 	String nome;
-	int idade;
 	String telefone;
 	String matricula;
 	String endereco;
@@ -42,9 +36,9 @@ public class Aluno {
 
 	}
 
-	public Aluno(String nome, int idade, String matricula) {
+	public Aluno(String nome, String telefone, String matricula) {
 		this.nome = nome;
-		this.idade = idade;
+		this.telefone = telefone;
 		this.matricula = matricula;
 	}
 }

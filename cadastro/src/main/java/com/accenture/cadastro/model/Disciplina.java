@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -30,7 +31,8 @@ public class Disciplina {
 	double notaApresentacao;
 	
 	@ManyToMany
-	@JsonIgnoreProperties("curso")
+	@JoinColumn(name="nota1", nullable=true)
+	@JsonIgnoreProperties("disciplina")
 	List<Curso> curso;
 	
 	public Disciplina() {

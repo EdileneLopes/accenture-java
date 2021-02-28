@@ -46,7 +46,7 @@ public class DisciplinaController {
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(disciplina));
 	}
 	
-	@PutMapping("/{id}")
+	@PutMapping
 	public ResponseEntity<Disciplina> put(@RequestBody Disciplina disciplina){
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(disciplina));
 	}
