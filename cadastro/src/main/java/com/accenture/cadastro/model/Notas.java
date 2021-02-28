@@ -7,7 +7,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
@@ -22,25 +21,20 @@ import lombok.Setter;
 @Getter
 @Setter
 @Entity
-@Table(name = "tb_disciplina")
-public class Disciplina {
+@Table(name = "tb_notas")
+public class Notas {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	long id;
-	String nome;
-
-	@ManyToMany
-	@JsonIgnoreProperties("disciplina")
-	List<Curso> curso;
-	
+	long id;;
+	double notaProva1;
+	double notaProva2;
+	double notaTrabalho;
+	double notaApresentacao;
 	
 	@OneToMany
-	List<Notas> notas;
-
-	public Disciplina() {
-		
-	}
+	List<Disciplina> disciplina;
 	
-
+	@OneToOne
+	Aluno aluno;
 }
