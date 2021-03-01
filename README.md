@@ -39,25 +39,18 @@ Projeto desenvolvido durante o **Treinamento Java e Node** oferecida pela [Gama 
 
 ## 📃 Documentação Completa
 
-- <a href="#">Back-End</a>
+- <a href="https://github.com/EdileneLopes/accenture-java/blob/master/cadastro.png.png">Back-End</a>
 
 ---
 
 ## ⚙️ Funcionalidades
 
 - [x] Alunos podem se cadastrar na plataforma enviando:
-  - Nome, Idade, Matricula, Email e Senha
+  - Nome, Telefone, Matricula
   
-- [] Alunos podem se logar na plataforma enviando:
-  - Email e Senha
-  
-- [] Administrador se cadastrar na plataforma enviando:
-  - Email e Senha
-
-- [] Administrador se logar na plataforma enviando:
-  - Email especial de administrador e senha
-  - Tem acesso ao CRUD onde permite o gerenciamento
-    - A Criação de Novos Alunos, Cursos, Disciplinas
+- [x] Manipular na plataforma:
+  - Acesso ao CRUD onde permite o gerenciamento
+    - A Criação de Novos Alunos, Cursos, Disciplinas, Notas
     - Pesquisa e Leitura
     - Ediçao
     - Exclusão
@@ -144,7 +137,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
   -[Maven Project](https://www.baeldung.com/spring-with-maven);
   -[Spring Boot Dev Tools](https://docs.spring.io/spring-boot/docs/1.5.16.RELEASE/reference/html/using-boot-devtools.html);
   -[Spring Web](https://spring.io/guides/gs/spring-boot/);
-  -[Spring Security](https://spring.io/projects/spring-security#overview);
   -[Spring Data JPA](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference);
   -[MySQL Driver](https://www.baeldung.com/java-connect-mysql);
   -[Validation](https://www.baeldung.com/spring-boot-bean-validation);
