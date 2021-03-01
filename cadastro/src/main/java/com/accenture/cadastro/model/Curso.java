@@ -30,7 +30,7 @@ public class Curso {
 	String nome;
 	
 	@OneToMany(mappedBy = "curso", cascade = CascadeType.ALL)
-	@JsonIgnoreProperties("curso")
+	@JsonIgnoreProperties({"curso", "disciplina", "cep", "uf", "cidade", "endereco", "telefone"})
 	List<Aluno> aluno;
 	
 	@ManyToMany(mappedBy = "curso", cascade = CascadeType.ALL)
