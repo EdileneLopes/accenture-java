@@ -37,6 +37,15 @@ Projeto desenvolvido durante o **Treinamento Java e Node** oferecida pela [Gama 
 
 ---
 
+---
+
+## :+1: Aprendizados
+
+Conceitos da linguagem Java, orientação a objetos, spring boot. Banco de dados.
+Solidificamos experiências de cooperação, trabalho em equipe. Também persistência em encontrar soluções.
+
+---
+
 ## 📃 Documentação Completa
 
 - <a href="https://github.com/EdileneLopes/accenture-java/blob/master/cadastro.png.png">Back-End</a>
@@ -119,10 +128,61 @@ $ Run As > Java Application
 
 [Acesse a Documentação com Swagger UI](http://localhost:8080/swagger-ui.html#/) ou http://localhost:8080/swagger-ui.html#/
 
-```
+```bash
 # Para o consumo de API
+Utilize o Postman https://www.postman.com/
+$ Exemplos:
+
+/cursos
+    {
+	"nome": "Java"
+    }
+
+/disciplinas
+    {
+   	"nome": "Lógica de Programação",
+  	"curso":
+  	 [
+  	    {
+ 	    	"id": 1
+  	    }
+  	 ]
+
+    }
+
+/alunos
+    {
+	"nome": "Elson",
+	"telefone": "977968299",
+	"matricula": "987654321",
+	"endereco": "Avenida Paulista",
+	"cidade": "São Paulo",
+	"uf": "SP",
+	"cep": "01310100",
+	"curso": 
+        {
+            "id": 1
+        }
+    }
+
+/notas
+    {
+        "notaProva1": 10.0,
+        "notaProva2": 10.0,
+        "notaTrabalho": 0.0,
+        "notaApresentacao": 0.0,
+        "disciplina": 
+	[
+            {
+              "id":1  
+            }
+        ],
+        "aluno": 
+	{
+            "id":1
+        }
+    }
 ```
-Utilize o **[Postman](https://www.postman.com/)**
 
 
 ---
