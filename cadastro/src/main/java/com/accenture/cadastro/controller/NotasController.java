@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.accenture.cadastro.model.Aluno;
 import com.accenture.cadastro.model.Notas;
 import com.accenture.cadastro.repository.NotasRepository;
 
@@ -24,6 +25,16 @@ import com.accenture.cadastro.repository.NotasRepository;
 public class NotasController {
 	@Autowired
 	public NotasRepository repository;
+	
+	@GetMapping
+	public ResponseEntity<List<Notas>> GetAll(){
+		return ResponseEntity.ok(repository.findAll());
+	}
+	
+	@GetMapping("/{id}")
+	public ResponseEntity<Notas> GetById(@PathVariable long id){
+		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	}
 	
 	@PostMapping
 	public ResponseEntity<Notas> post(@RequestBody Notas notas){
