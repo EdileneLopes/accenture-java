@@ -34,7 +34,6 @@ public class Disciplina {
 	@JsonIgnoreProperties("disciplina")
 	List<Curso> curso;
 	
-	
 	@OneToMany
 	List<Notas> notas;
 

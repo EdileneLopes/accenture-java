@@ -25,16 +25,6 @@ public class NotasController {
 	@Autowired
 	public NotasRepository repository;
 	
-	@GetMapping
-	public ResponseEntity<List<Notas>> GetAll(){
-		return ResponseEntity.ok(repository.findAll());
-	}
-	
-	@GetMapping("/{id}")
-	public ResponseEntity<Notas> GetById(@PathVariable long id){
-		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
-	}
-	
 	@PostMapping
 	public ResponseEntity<Notas> post(@RequestBody Notas notas){
 		return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(notas));

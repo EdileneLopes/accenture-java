@@ -26,15 +26,18 @@ public class Notas {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	long id;;
+	long id;
 	double notaProva1;
 	double notaProva2;
 	double notaTrabalho;
 	double notaApresentacao;
 	
 	@OneToMany
+	@JsonIgnoreProperties("notas")
 	List<Disciplina> disciplina;
 	
-	@OneToOne
-	Aluno aluno;
+	/*@OneToOne
+	@JsonIgnoreProperties("notas")
+	Aluno aluno;*/
+	
 }
